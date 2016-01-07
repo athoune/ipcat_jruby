@@ -1,0 +1,12 @@
+Gem::Specification.new do |s|
+  s.name        = 'ipcat'
+  s.version     = '0.9'
+  s.date        = '2016-01-07'
+  s.summary     = "IP Category : does it came from a datacenter?"
+  s.description = "Client for the data from https://github.com/client9/ipcat"
+  s.authors     = ["Mathieu Lecarme"]
+  s.email       = 'mlecarme@garambrogne.net'
+  s.files       = ["lib/ipcat.rb"]
+  s.homepage    = 'https://github.com/athoune/ipcat.rb'
+  s.license     = 'MIT'
+end
