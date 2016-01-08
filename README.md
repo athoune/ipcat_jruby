@@ -15,7 +15,7 @@ require 'ipcat'
 
 datacenters = IPCat::Datacenters.new('datacenters.csv')
 
-p datacenters.find('192.30.252.130')
+p datacenters.find('54.186.104.15') # rubygems.org
 ```
 
 License
