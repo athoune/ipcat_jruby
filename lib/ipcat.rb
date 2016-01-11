@@ -23,7 +23,7 @@ module IPCat
 
     def find(ipstring)
       ip = IPAddr.new(ipstring).to_i
-      high = length
+      high = length - 1
       low = 0
       while high >= low
         probe = ((high + low) / 2).floor.to_i
