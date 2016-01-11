@@ -4,20 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Blocks {
-    private List<Integer> starts;
-    private List<Integer> ends;
+    private List<Long> starts;
+    private List<Long> ends;
 
     public Blocks() {
-        this.starts = new ArrayList<Integer>();
-        this.ends = new ArrayList<Integer>();
+        this.starts = new ArrayList<Long>();
+        this.ends = new ArrayList<Long>();
     }
 
-    public void add(Integer start, Integer end) {
+    public void add(Long start, Long end) {
         this.starts.add(start);
         this.ends.add(end);
     }
 
-    public int find(Integer value) {
+    public int find(Long value) {
         int high = this.starts.size() -1;
         int low = 0;
         int probe;
