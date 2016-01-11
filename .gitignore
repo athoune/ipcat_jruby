@@ -1,3 +1,4 @@
 *.gem
 datacenters.csv
 classes
+lib/*.jar
