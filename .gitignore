@@ -1,4 +1,5 @@
 *.gem
 datacenters.csv
+ip.txt
 classes
 lib/*.jar
