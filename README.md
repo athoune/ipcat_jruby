@@ -1,5 +1,5 @@
-IPcat, for Ruby
-===============
+IPcat, for jRuby
+================
 
 [IPcat](https://github.com/client9/ipcat) provides blocks of IP,
 that correspond to datacenters, co-location centers, shared and virtual
@@ -26,6 +26,12 @@ Fetch some IPs from your logs :
     zgrep "authentication failure" /var/log/auth.log.*.gz | grep pam_unix | cut -d ' ' -f 14 | cut -d '=' -f 2 | sort | uniq > ip.txt
 
 Clean resolved domain names, keep only IP.
+
+Build
+-----
+
+    rake jar
+    gem build ipcat.gemspec
 
 License
 -------
