@@ -1,6 +1,8 @@
 require 'java'
 require 'ipcat.jar'
 
+include_class 'java.lang.NumberFormatException'
+
 module IPCat
   class Datacenters
     def initialize(file)
@@ -18,8 +20,12 @@ module IPCat
 
     def find(ipstring)
       return nil if ipstring.nil?
-      n = @blocks.find(org.ipcat.IP.parseIp(ipstring))
-      return @urls[n] unless n == -1
+      begin
+        n = @blocks.find(org.ipcat.IP.parseIp(ipstring))
+        return @urls[n] unless n == -1
+      rescue NumberFormatException => e
+        return nil
+      end
     end
 
     def length

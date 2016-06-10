@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'ipcat_jruby'
-  s.version     = '0.2.1'
-  s.date        = '2016-01-11'
+  s.version     = '0.2.3'
+  s.date        = '2016-06-10'
   s.summary     = "IP Category : does it came from a datacenter?"
   s.description = "Client for the data from https://github.com/client9/ipcat"
   s.authors     = ["Mathieu Lecarme"]
